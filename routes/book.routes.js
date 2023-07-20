@@ -5,5 +5,5 @@ module.exports = app => {
 
     router.post('/', book.create)
 
-    app.use('/api/v1/books')
+    app.use('/api/v1/books', router)
 }
