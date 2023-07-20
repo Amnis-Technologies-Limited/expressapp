@@ -32,6 +32,8 @@ app.get("/", (req, res) => {
     })
 })
 
+require('./routes/book.routes')(app)
+
 // Set port
 const PORT = 8080;
 app.listen(PORT, () => {
