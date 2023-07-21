@@ -48,7 +48,7 @@ exports.findAll = (req, res) => {
 
 // find a single book with an id
 exports.fineOne = (req, res) => {
-    const id = req.params.id
+    const id = req.body.id
 
     Book.findByPk(id)
         .then(data => {
