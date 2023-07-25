@@ -70,7 +70,7 @@ const login = async (req, res) => {
                     statusCode: 200,
                     status: 'success',
                     message: 'login successful',
-                    data: user
+                    accessToken: token
                 })
             } else {
                 return res.status(401).send({
