@@ -33,6 +33,7 @@ app.get("/", (req, res) => {
 })
 
 require('./routes/book.routes')(app)
+require('./routes/user.routes')(app)
 
 // Set port
 const PORT = 8080;
