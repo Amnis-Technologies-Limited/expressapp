@@ -31,6 +31,8 @@ const signup = async (req, res, next) => {
                 message: 'Email used!'
             })
         }
+
+        next()
     } catch (error) {
         res.status(500).send({
             statusCode: 500,
